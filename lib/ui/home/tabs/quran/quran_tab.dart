@@ -4,13 +4,12 @@ import 'package:islami_c13/ui/home/tabs/quran/most_recent_card.dart';
 import 'package:islami_c13/ui/home/tabs/quran/resources.dart';
 import 'package:islami_c13/ui/home/tabs/quran/sura_widget.dart';
 
+import '../../../sura_details/sura_details_screen.dart';
 class QuranTab extends StatefulWidget {
   QuranTab({super.key});
-
   @override
   State<QuranTab> createState() => _QuranTabState();
 }
-
 class _QuranTabState extends State<QuranTab> {
   List<int> mostRecentList = [];
   List<int> filteredSuraIndices = List.generate(
@@ -65,7 +64,14 @@ class _QuranTabState extends State<QuranTab> {
           child: ListView.separated(
             itemCount: filteredSuraIndices.length,
             itemBuilder: (context, index) {
-              return SuraWidget(filteredSuraIndices[index]);
+              return SuraWidget(filteredSuraIndices[index],
+                  onTap: () {
+                    updateMostRecentSuraList(filteredSuraIndices[index]);
+                    getSavedMostRecentData();
+                    Navigator.of(context)
+                        .pushNamed(SuraDetailsScreen.routeName, arguments:filteredSuraIndices[index]);
+                  }
+              );
             },
             separatorBuilder: (context, index) => Container(
               color: Colors.white,
@@ -78,7 +84,6 @@ class _QuranTabState extends State<QuranTab> {
       ],
     );
   }
-
   void getSavedMostRecentData() async {
     var indicesList = await readMostRecentIndices();
     var isDifferent = false;

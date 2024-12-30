@@ -6,17 +6,12 @@ import 'package:islami_c13/ui/sura_details/sura_details_screen.dart';
 
 class SuraWidget extends StatelessWidget {
   int suraIndex;
-
-  SuraWidget(this.suraIndex, {super.key});
-
+  void Function() onTap;
+  SuraWidget(this.suraIndex,{super.key,required this.onTap});
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        updateMostRecentSuraList(suraIndex);
-        Navigator.of(context)
-            .pushNamed(SuraDetailsScreen.routeName, arguments: suraIndex);
-      },
+     onTap: onTap,
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
         child: Row(
