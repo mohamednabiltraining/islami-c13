@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:islami_c13/screens/intro_screen.dart';
 import 'package:islami_c13/ui/assets.dart';
 import 'package:islami_c13/ui/home/home.dart';
+import 'package:islami_c13/ui/home/tabs/tasbeh/tasbeh_tab.dart';
 import 'package:islami_c13/ui/splash/splash_screen.dart';
 import 'package:islami_c13/ui/sura_details/sura_details_screen.dart';
 
@@ -47,6 +49,9 @@ class MyApp extends StatelessWidget {
         SplashScreen.routeName: (_) => SplashScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
         SuraDetailsScreen.routeName: (_) => SuraDetailsScreen(),
+        IntroScreen.routeName: (_) => IntroScreen(),
+        TasbehTab.routeName: (_) => TasbehTab(),
+
       },
     );
   }
