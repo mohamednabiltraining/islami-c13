@@ -2,8 +2,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class PrefsKeys {
   static const String mostRecentIndices = "most_recent_sura_indices";
+  static const String onBoardingView='onboarding_view';
 }
-
 void updateMostRecentSuraList(int newSuraIndex) async {
   final SharedPreferences prefs = await SharedPreferences.getInstance();
   var savedList = await readMostRecentIndices();

@@ -17,6 +17,20 @@ class AppImages {
       "assets/images/sura_title_right.png";
   static const String mostRecentImage =
       "assets/images/hadeth_card_background.png";
+  static const String mosqueImage=
+      "assets/images/mosque_image.png";
+  static const String greetingImage=
+      "assets/images/greeting_image.png";
+  static const String bearish=
+      "assets/images/bearish.png";
+  static const String radioImage=
+      "assets/images/radio.png";
+  static const String welcomeImage=
+      "assets/images/welcome.png";
+  static const String sebhaBgImage=
+      "assets/images/sebha_bg_image.png";
+  static const String sebhaHead=
+      "assets/images/sebha_head.png";
 }
 
 class AppColors {
