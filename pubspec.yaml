@@ -38,6 +38,8 @@ dependencies:
   flutter_svg: ^2.0.16
   carousel_slider: ^5.0.0
   shared_preferences: ^2.3.4
+  smooth_page_indicator: ^1.2.0+3
+
 
 dev_dependencies:
   flutter_test:
@@ -66,6 +68,8 @@ flutter:
     - assets/images/
     - assets/files/
     - assets/hadeth/
+    - assets/onboardingScreenImages_Icons/images/
+    - assets/onboardingScreenImages_Icons/icons/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
