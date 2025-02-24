@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'onboardingpages/onboardingScreen.dart';
+import '../onboardingpages/onboardingScreen.dart';
 
 
 void main() =>

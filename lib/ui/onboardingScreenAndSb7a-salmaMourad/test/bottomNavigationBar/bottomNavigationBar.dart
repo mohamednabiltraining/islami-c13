@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../sb7aPages/Sb7aPageScreen.dart';
+import '../../../../sb7a/sb7aPages/Sb7aPageScreen.dart';
 import 'test.dart';
 
 class BottomNavigationBarPage extends StatefulWidget {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami_c13/ui/home/home.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../bottomNavigationBar/bottomNavigationBar.dart';
+import '../test/bottomNavigationBar/bottomNavigationBar.dart';
 import 'slideContainer.dart';
 
 class IntroPagesScreen extends StatefulWidget {

@@ -5,7 +5,7 @@ import 'package:islami_c13/ui/home/home_utils.dart';
 import 'package:islami_c13/ui/home/tabs/hadeth/hadeth_tab.dart';
 import 'package:islami_c13/ui/home/tabs/prayers/prayers_tab.dart';
 import 'package:islami_c13/ui/home/tabs/quran/quran_tab.dart';
-import 'package:islami_c13/ui/home/tabs/radio/radio_tab.dart';
+import 'package:islami_c13/ui/home/tabs/radio_tab/radio_tab.dart';
 import 'package:islami_c13/ui/home/tabs/tasbeh/tasbeh_tab.dart';
 
 class HomeScreen extends StatefulWidget {

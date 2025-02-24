@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../prayer.dart';
+import 'prayer_screen.dart';
 
 class PrayersTab extends StatelessWidget {
   const PrayersTab({super.key});
