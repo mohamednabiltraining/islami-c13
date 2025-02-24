@@ -4,6 +4,8 @@ import 'package:islami_c13/ui/home/home.dart';
 import 'package:islami_c13/ui/splash/splash_screen.dart';
 import 'package:islami_c13/ui/sura_details/sura_details_screen.dart';
 
+import 'ui/onboardingScreenAndSb7a-salmaMourad/onboardingpages/onboardingScreen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -42,9 +44,10 @@ class MyApp extends StatelessWidget {
                   fontSize: 24,
                   fontWeight: FontWeight.bold))),
       themeMode: ThemeMode.dark,
-      initialRoute: SplashScreen.routeName,
+      initialRoute: IntroPagesScreen.routeName,
       routes: {
         SplashScreen.routeName: (_) => SplashScreen(),
+        IntroPagesScreen.routeName:(_)=>IntroPagesScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
         SuraDetailsScreen.routeName: (_) => SuraDetailsScreen(),
       },

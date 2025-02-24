@@ -39,6 +39,8 @@ dependencies:
   carousel_slider: ^5.0.0
   shared_preferences: ^2.3.4
   smooth_page_indicator: ^1.2.0+3
+  dio: ^5.4.0
+  audioplayers: ^5.2.1
 
 
 dev_dependencies:

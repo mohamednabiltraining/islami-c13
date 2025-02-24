@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islami_c13/ui/assets.dart';
 import 'package:islami_c13/ui/home/home.dart';
 
+import '../onboardingScreenAndSb7a-salmaMourad/onboardingpages/onboardingScreen.dart';
+
 class SplashScreen extends StatelessWidget {
   static const String routeName = "splash";
 
@@ -12,7 +14,7 @@ class SplashScreen extends StatelessWidget {
         seconds: 2,
       ),
       () {
-        Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+        Navigator.pushNamed(context, IntroPagesScreen.routeName);
       },
     );
     return Scaffold(
